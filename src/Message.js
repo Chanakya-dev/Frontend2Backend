@@ -7,7 +7,7 @@ function Message() {
 
   useEffect(() => {
     // Fetch data from Django API
-    axios.get('http://127.0.0.1:8000/app/sample/')
+    axios.get('http://127.0.0.1:8000/domain/test/demo')
       .then(response => {
         setMessage(response.data);  // Store response in state
       })
